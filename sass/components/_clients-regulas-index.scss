@@ -1,0 +1,109 @@
+.client-regular {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    @media screen and (max-width: 768px) {
+        position: absolute;
+        top: 2452px;
+        left: -20px;
+        width: 768px;
+
+    }
+
+    @media screen and (max-width: 480px) {
+        position: relative;
+        top: 3950px;
+        left: -20px;
+        width: 480px;
+        height: 399px;
+
+
+    }
+
+    &__client-title {
+        margin-bottom: 50px;
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
+    }
+
+    &__client-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__client-item {
+        width: 170px;
+        height: 90px;
+    }
+
+    &__client-link {
+        width: 170px;
+        height: 90px;
+        display: block;
+        border: 1px solid$color-gray;
+        color: $color-gray;
+        background-color: #fff;
+        padding: 16px 32px;
+    }
+
+    &__client-link:hover,
+    &__client-link:focus {
+        color: $secondary-color;
+        border-color: $secondary-color;
+    }
+
+    &__client-icon {
+        fill: currentColor;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .client-regular__client-title {
+        position: relative;
+        top: -80px;
+        font-size: 28px;
+    }
+
+    .client-regular__client-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+    }
+
+    .client-regular__client-link {
+        position: relative;
+        top: -80px;
+        width: 226px;
+        height: 92px;
+    }
+
+    .client-regular__client-icon {
+        position: relative;
+        left: 25px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .client-regular__client-title {
+        position: absolute;
+        left: 120px;
+        top: 5px;
+    }
+
+    .client-regular__client-list {
+        position: relative;
+        top: 80px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .client-regular__client-link {
+        width: 210px;
+        height: 92px;
+        right: 18px;
+    }
+
+}
